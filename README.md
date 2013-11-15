@@ -17,7 +17,7 @@ themes folder. (Mine is at ~/.oh-my-zsh/themes/)
 Install the font
 
 Symlink or whatever the batterycharge.py to 
-bin/batterycharge.py
+bin/batterycharge.py and add execute priviliges to it
 
 Switch your font to mensh
 
