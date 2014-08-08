@@ -1,6 +1,9 @@
 oh-my-zsh-danlinn-theme
 =======================
 
+NEW: rvm ruby version displayed before the battery
+charge on the right side
+
 This repo contains a theme called danlinn that combines
 the Powerline-like agnoster theme and the multi-line 
 duellj theme and includes a battery display script 
