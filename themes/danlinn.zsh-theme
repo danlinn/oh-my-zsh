@@ -1,9 +1,7 @@
+# vim:ft=zsh ts=2 sw=2 sts=2
 #
-# danlinn's Theme
+# agnoster's Theme - https://gist.github.com/3712874
 # A Powerline-inspired theme for ZSH
-# Much love to agnoster and duellj.
-# I basically combined their themes
-# and added a plugged-in and charging status.
 #
 # # README
 #
@@ -112,7 +110,8 @@ battery_charge() {
     echo ''
   fi
 }
-local bat='$(battery_charge)'
+local bat='$(ruby_version) $(battery_charge)'
+
 RPROMPT=$bat
 
 
