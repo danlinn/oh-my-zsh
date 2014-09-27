@@ -14,14 +14,29 @@ Includes the mensch-powerline font for fancy symbols.
 Install (this assumes that you have the original 
 oh-my-zsh installed):
 
-Put the themes/danlinn.zsh-theme file in your oh-my-zsh
+1. Put the themes/danlinn.zsh-theme file in your oh-my-zsh
 themes folder. (Mine is at ~/.oh-my-zsh/themes/)
 
-Install the font
+2. Install the font
 
-Symlink or whatever the batterycharge.py to 
+3. Symlink or whatever the batterycharge.py to 
 bin/batterycharge.py and add execute priviliges to it
 
-Switch your font to mensh
+4. Switch your terminal font to mensh
+
+5. Play with colors - some colors may need ot be changed for maximum contrast.  I leave that to you.
+
+6. In your ~/.zshrc file add this function:
+function ruby_version() {
+  if which rvm-prompt &> /dev/null; then
+    rvm-prompt i v g
+  else
+    if which rbenv &> /dev/null; then
+      rbenv version | sed -e "s/ (set.*$//"
+    fi
+  fi
+}
+
+7. Then switch your theme to danlinn
 
 Enjoy
