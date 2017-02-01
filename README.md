@@ -39,7 +39,8 @@ function ruby_version() {
       fi      
     fi    
   fi  
-}```
+}
+```
 
 7. Then switch your theme to danlinn
 
