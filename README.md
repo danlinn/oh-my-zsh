@@ -28,11 +28,14 @@ bin/batterycharge.py and add execute priviliges to it
 
 6. In your ~/.zshrc file add this function:
 function ruby_version() {
-  if which rvm-prompt &> /dev/null; then
-    rvm-prompt i v g
+  if which rvm-prompt &> /dev/null;
+    then rvm-prompt i v g
   else
-    if which rbenv &> /dev/null; then
-      rbenv version | sed -e "s/ (set.*$//"
+    if which rbenv &> /dev/null;
+      then rbenv version | sed -e "s/ (set.*$//"
+    else if
+      then ruby --version | awk '{print $1 $2;}'
+      fi
     fi
   fi
 }
