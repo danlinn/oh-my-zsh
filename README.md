@@ -27,7 +27,8 @@ bin/batterycharge.py and add execute priviliges to it
 5. Play with colors - some colors may need ot be changed for maximum contrast.  I leave that to you.
 
 6. In your ~/.zshrc file add this function:
-```function ruby_version() {
+```bash
+function ruby_version() {
   if which rvm-prompt &> /dev/null; 
     then rvm-prompt i v g    
   else  
